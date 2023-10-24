@@ -36,7 +36,7 @@ export default function Produtos() {
             <View style={styles.pedidos}>
                 <Text style={styles.subtitle}>Pedido</Text>
                 <View style={styles.pedidoData}>
-                    <Text>Saldo da comanda</Text>
+                    <Text>Carrinho</Text>
                     <Text>R$ 0,00</Text>
                 </View>
                 <View style={styles.pedidoData}>
