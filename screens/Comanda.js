@@ -8,7 +8,7 @@ export default function Comanda(){
 
             <View>
                 <Text>Olá,</Text>
-                <Text>João Carlos</Text>
+                <Text>Usuario</Text>
             </View>
 
             <View>
@@ -17,8 +17,8 @@ export default function Comanda(){
             </View>
 
             <Text>
-                Digite o código da comanda 
-                para iniciar um pedido
+                Digite a marca para buscar o produto 
+                para iniciar a busca
             </Text>
 
         </View>
