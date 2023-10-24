@@ -9,9 +9,9 @@ import { useEffect, useState } from 'react';
 
 const produto = {
     "id": 1,
-    "nome": "Bolo de Chocolate",
-    "imagePath": "https://img.freepik.com/free-photo/close-up-fancy-dessert_23-2150527565.jpg?t=st=1688655003~exp=1688658603~hmac=84829cbb20876216de8d7e408378e6b1c44686855c3d414865b445e20bb5f7b4&w=1380",
-    "preco": 8
+    "nome": "Adidas",
+    "imagePath": "hthttps://www.freepik.com/free-photo/pair-trainers_6048743.htm#query=Shoes&position=1&from_view=search&track=sphtps://img.freepik.com/free-photo/close-up-fancy-dessert_23-2150527565.jpg?t=st=1688655003~exp=1688658603~hmac=84829cbb20876216de8d7e408378e6b1c44686855c3d414865b445e20bb5f7b4&w=1380",
+    "preco": 400
 }
 
 export default function Produtos() {
