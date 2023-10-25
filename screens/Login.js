@@ -2,20 +2,38 @@ import { StatusBar } from 'expo-status-bar';
 import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import Button from '../components/button';
 import Input from '../components/input';
+import { AuthContext } from '../context/AuthContext';
+import { useState } from 'react';
+import { useContext } from 'react';
 
 export default function Login({navigation}) {
+  const [email, setEmail] = useState('')
+  const [senha, setSenha] = useState('')
+  const [erro, setErro] = useState('')
+  const {login} = useContext(AuthContext)
+  
+  async function handleLogin(){
+    if (await login({email, senha})){
+      navigation.navigate("Comanda")
+    }else{
+      setErro("usuario ou senha invalido. Caralho.")
+    }
+  }
+
   return (
     <View style={styles.container}>
       <Image style={styles.image} source={require('../assets/home.jpg')} />
       <Text>Sistema</Text>
       <Text style={styles.title}>Comanda</Text>
 
-      <Input placeholder='e-mail'/>
-      <Input placeholder='senha' secureTextEntry/>
+      <Input placeholder='e-mail' value={email} on ChangeText={setEmail}/>
+      <Input placeholder='senha' value={senha} on ChangeText={setSenha} secureTextEntry/>
 
-      <Button onPress={() => navigation.navigate('Comanda')}>
+      <Button onPress={handleLogin}>
         Entrar
       </Button>
+
+      <text>{erro}</text>
       
       <TouchableOpacity >
         <Text>criar conta</Text>

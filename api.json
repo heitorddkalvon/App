@@ -18,5 +18,20 @@
             "preco": 900,
             "id": 3
         }
+    ],
+    
+    "usuarios": [ 
+        {
+            "id":1,
+            "nome":"Telesto",
+            "email":"telesto@gmail.com",
+            "senha": "1234"
+        },
+        {
+            "id":2,
+            "nome":"Osteo Striga",
+            "email":"Denden@gmail.com",
+            "senha": "1234"
+        }
     ]
 }
