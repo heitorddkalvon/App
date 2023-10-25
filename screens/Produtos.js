@@ -59,8 +59,9 @@ export default function Produtos() {
                   <CardProduto key={produto.id} produto={produto} />) }
 
             </ScrollView>
-
-            <Button>finalizar</Button>
+              
+            <Button onPress={() => navigation.navigate('Comanda')}>Finalizar</Button>
+      
             
         </View>
 
