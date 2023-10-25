@@ -49,7 +49,7 @@ export default function Produtos() {
                 </View>
             </View>
 
-            <TextInput style={styles.input} placeholder="procurar" />
+            <TextInput style={styles.input} placeholder="Sapatos" />
 
             <Text style={styles.subtitle}>Produtos</Text>
 
