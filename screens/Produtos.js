@@ -28,8 +28,8 @@ export default function Produtos() {
                 <MaterialIcons name="arrow-back" size={24} color="black" />
 
                 <View style={styles.box}>
-                    <Text>comanda</Text>
-                    <Text style={styles.title}>2457</Text>
+                    <Text>Carrinho</Text>
+                    <Text style={styles.title}>00001</Text>
                 </View>
             </View>
 
