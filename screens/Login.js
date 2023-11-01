@@ -26,8 +26,8 @@ export default function Login({navigation}) {
       <Text>Sistema</Text>
       <Text style={styles.title}>Comanda</Text>
 
-      <Input placeholder='e-mail' value={email} on ChangeText={setEmail}/>
-      <Input placeholder='senha' value={senha} on ChangeText={setSenha} secureTextEntry/>
+      <Input placeholder='e-mail' value={email} onChangeText={setEmail}/>
+      <Input placeholder='senha' value={senha} onChangeText={setSenha} secureTextEntry/>
 
       <Button onPress={handleLogin}>
         Entrar
